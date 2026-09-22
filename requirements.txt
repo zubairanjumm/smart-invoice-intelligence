@@ -1,0 +1,7 @@
+pydantic
+google-genai
+PyMuPDF
+pytesseract
+Pillow
+python-dotenv
+pytest
