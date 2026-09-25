@@ -1,10 +1,12 @@
-from app.ocr import extract_text_from_image
-from pathlib  import Path
+from pathlib import Path
 
-image_path = Path("samples/test_invoice.png")
-text = extract_text_from_image(image_path)
+from app.ocr import extract_text_from_image
+
 
 def test_extract_text_from_image():
+    path = Path("samples/test_invoice.png")
+
+    text = extract_text_from_image(path)
+
     assert text
     assert "ABC Supplies" in text
-
